@@ -35,7 +35,7 @@ The fused embeddings are processed by a Multi-Layer Perceptron (MLP) designed fo
 To foster clinical trust, GemmaSight avoids isolated "black-box" predictions. It employs a $k$-Nearest Neighbors retrieval system to find historical morphological matches.
 * **Vector Database:** Historical training embeddings are L2-normalized and indexed using `faiss.IndexFlatL2`. 
 * **Retrieval Metric:** The system calculates the Cosine Similarity between the query vector $Q$ and database vectors $D$:
-<div align="center">
+
 `Similarity(Q, D) = (Q · D) / (||Q|| ||D||)`
 * **Execution:** At inference, the system retrieves the top 3 most morphologically similar historical cases to serve as clinical evidence.
 
