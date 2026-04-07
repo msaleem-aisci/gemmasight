@@ -1,7 +1,5 @@
 # GemmaSight: Multimodal Retrieval-Augmented Pathology Assistant
 
-**Research Team:** BlueMind
-
 ## 1. Abstract
 GemmaSight is an end-to-end multimodal AI pipeline engineered to accelerate the classification of Microsatellite Instability (MSI-High) versus Microsatellite Stability (MSS) in colorectal cancer. By analyzing standard Hematoxylin and Eosin (H&E) stained tissue patches, the system bypasses the standard multi-week turnaround time for genomic biomarker testing. The architecture leverages feature fusion from dual vision foundation models, spatial interpretability (Occlusion Heatmaps), and Retrieval-Augmented Generation (RAG) to produce evidence-backed clinical pathology reports in under two minutes.
 
