@@ -36,7 +36,11 @@ To foster clinical trust, GemmaSight avoids isolated "black-box" predictions. It
 * **Vector Database:** Historical training embeddings are L2-normalized and indexed using `faiss.IndexFlatL2`. 
 * **Retrieval Metric:** The system calculates the Cosine Similarity between the query vector $Q$ and database vectors $D$:
 <div align="center">
-  <img src="https://latex.codecogs.com/svg.image?\text{Similarity}(Q,D)=\frac{Q\cdot&space;D}{\|Q\|\|D\|}" title="Cosine Similarity Formula" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://latex.codecogs.com/svg.image?\color{white}\text{Similarity}(Q,D)=\frac{Q\cdot&space;D}{\|Q\|\|D\|}">
+    <source media="(prefers-color-scheme: light)" srcset="https://latex.codecogs.com/svg.image?\color{black}\text{Similarity}(Q,D)=\frac{Q\cdot&space;D}{\|Q\|\|D\|}">
+    <img src="https://latex.codecogs.com/svg.image?\text{Similarity}(Q,D)=\frac{Q\cdot&space;D}{\|Q\|\|D\|}" title="Cosine Similarity Formula" />
+  </picture>
 </div>
 * **Execution:** At inference, the system retrieves the top 3 most morphologically similar historical cases to serve as clinical evidence.
 
